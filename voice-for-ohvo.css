@@ -1,0 +1,159 @@
+
+.voice-talent-container {
+    text-align: center;
+}
+
+.voice-talent-container .filter {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.voice-talent-container .filter .filter-btn {
+    padding: 4px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111111;
+    margin: 0 10px;
+    transition: all .3s;
+    border-radius: 50px;
+}
+
+.voice-talent-container .filter .filter-btn:hover {
+    background: #C1DB40;
+    box-shadow: 0px 9px 19px #C1DB4080;
+    color: #FFFFFF;
+}
+
+.voice-talent-container .filter .filter-btn.active {
+    background: #8EAD2D;
+    color: #FFFFFF;
+}
+
+.talent-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.talent-grid .talent-item {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column;
+    width: 23%;
+    margin-bottom: 50px;
+    padding: 30px 20px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 14px 24px #999EA01C;
+    border: 2px solid #F3F3F3;
+    border-radius: 20px;
+    opacity: 1;
+}
+
+.talent-grid .talent-item:not(:last-child) {
+    margin-right: 2%;
+}
+
+.talent-grid .talent-item .talent-image {
+    width: 100%;
+    text-align: left;
+}
+
+.talent-grid .talent-item .talent-image img {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+}
+
+.talent-grid .talent-item .talent-info {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.talent-grid .talent-item .talent-info h5.talent-name {
+    font-size: 18px;
+    line-height: 28px;
+    color: #111111;
+}
+
+.talent-grid .talent-item .talent-info p.talent-description {
+    font-size: 14px;
+    line-height: 24px;
+    color: #8EAD2D;
+}
+
+.voice-talent-container .load-more {
+    margin-bottom: 30px;
+}
+
+.voice-talent-container .load-more a.load-more-button {
+    display: inline-block;
+    padding: 13px 30px;
+    border: 1px solid;
+    transition: all .3s;
+}
+
+.voice-talent-container .load-more a.load-more-button:hover {
+    background: #C1DB40;
+    color: #FFFFFF;
+    box-shadow: 0px 9px 19px #C1DB4080;
+    border-color: #C1DB40;
+}
+
+
+/* css loader */
+
+.voice-talent-container .loading {
+    position: relative;
+    display: none;
+}
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #8ead2d;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
